@@ -1,0 +1,6 @@
+{
+  "name": "homework04",
+  "dependencies": {
+    "jquery": "1.11"
+  }
+}
