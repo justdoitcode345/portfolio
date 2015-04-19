@@ -126,6 +126,7 @@ html {
 	width:650px;
 	float: right;
 	border-radius: 4px;
+	margin-bottom: 12px;
 }
 /* меню навигации */
 .nav  {
@@ -229,23 +230,20 @@ html {
 /* контент, секция первая */
 .section {
 	border-radius: 4px;
-	background-color: yellow;
 	margin-bottom: 24px;
 	background-color: #EFF2F7;
-	padding-bottom: 39px;
+	padding-bottom: 40px;
 }
 .section-header {
 	font-family: 'fira_sansbook';
 	font-size: 27px;
 	color: #3ba8c0;
-	/*width: 340px;*/
 	height: 40px;
 	border: 2px;
 	border-color: #3ba8c0;
 	border-bottom: 2px solid;
 	display: inline-block;
 	padding: 14px 22px 13px 22px;
-
 }
 .section-header span{
 	margin: 0 auto;
@@ -316,50 +314,75 @@ html {
 	border-radius: 4px;
 	font-family: 'proxima_nova_condensedSBd';
 }
+
+
+
+
+/* опыт работы */
+.section-education {
+	background-color: #EFF2F7;
+	padding: 0px;
+	margin: 16px;
+}
+.section-next {
+	border-radius: 4px;
+	margin-bottom: 24px;
+	background-color: #EFF2F7;
+	padding-bottom: 17px;
+}
 .experience-list {
 	list-style: none;
 	color: #4a545d;
-}
-.bag {
-	width: 36px;
-	height: 34px;
-	background-image: url(../img/ic_work.png);
-	float: left;
-	margin: 12px 0 0 17px;
+	padding: 0px;
+	margin: 0;
+	text-align: left;
 }
 .experience-item {
-	margin-bottom: 3px;
-	float: left;
+	margin: 0px 19px 5px 19px;
 }
+.icon-education {
+	background-image: url(../img/ic_work.png);
+  	display: block;
+  	background-repeat: no-repeat;
+    position: center;
+ 	padding: 0 0 0 90px;
+  	background-position: 23px 50%;
+}
+
+.icon-study {
+	background-image: url(../img/ic_study.png);
+  	display: block;
+  	background-repeat: no-repeat;
+    position: center;
+  	padding: 0 0 0 90px;
+  	background-position: 20px 50%;
+}
+.icon-course {
+	background-image: url(../img/ic_course.png);
+  	display: block;
+  	background-repeat: no-repeat;
+    position: center;
+  	padding: 0 0 0 90px;
+  	background-position: 27px 50%;
+}
+
+
 .experience-item-info {
-	float: left;
+	
 	width: 360px;
 	margin: 6px 0 0 30px;
 }
 .experience-item-header {
-	float: left;
 	font-size: 17px;
 	font-family: 'fira_sansbook';
+	padding-top: 4px;
 }
 .experience-item-text {
-	float: left;
 	font-size: 15px;
 	font-family: 'fira_sanslight';
+	pas
 }
-.teach1 {
-	width: 42px;
-	height: 23px;
-	background-image: url(../img/ic_study.png);
-	float: left;
-	margin: 12px 0 0 17px;
-}
-.teach2 {
-	width: 26px;
-	height: 32px;
-	background-image: url(../img/ic_course.png);
-	float: left;
-	margin: 12px 0 0 25px;
-}
+
 
 
 
@@ -367,32 +390,61 @@ html {
 .footer {
 	background: #eff3f7 url(../img/border.png) top center no-repeat;
 	color: #4a545d;
-}
-.footer .footer-content {
-	padding-top: 23px;
-	position: relative;
-}
-.footer .copyright {
-	margin: 0 180px;
+	height: 100%;
 	padding-top: 7px;
+	font-size: 13px;
+}
+.footer-login {
+	height: 35px;
+	width: 23px;
+	float:left;
+	position: relative;
+	top: 18px;
+	left: 28px;
+}
+.login-link {
+	display: block;
+	width: 23px;
+	height: 35px;
+	background-image: url(../img/ic_lock.png);
+	background-repeat: no-repeat;
+
+}
+.login-link:hover {
+	background-image: url(../img/ic_unlock.png);
+	background-position: 2px 1
+	x;
+}
+.copyright {
+	font-family: 'fira_sanslight';
+	width: 400px;
 	text-align: center;
 	font-size: 13px;
+	vertical-align: middle;
+	margin: 23px auto;
+}
+.footer-content {
+	width: 960px;
+	margin: auto;
+	height: 78px;
+	text-align: center;
+
 }
 /* прибивка футера к низу */
 .wrapper {
 	position: relative;
 	min-height: 100%;
 	height:auto !important;
-	overflow: hidden;
+	overflow: hidden;*/
 }
 .wrapper:after {
 	content: "";
-	height: 80px;
+	height: 78px;
 	display: block;
 }
 .footer {
-	height: 80px;
-	margin-top: -80px;
+	height: 78px;
+	margin-top: -78px;
 }
 /* clearfix */
 .container:before, .clearfix:before,
