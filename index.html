@@ -1,123 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>homework04</title>
-	<link rel="stylesheet" href="css/main.css">
+	<!-- SEO -->
+	<meta name="description" content="homework04">
+	<meta name="keywords" content="homework04">
+	<meta name="author" content="Khasanov Timur">
+	<!-- vendor CSS -->
 	<link rel="stylesheet" href="app/bower/normalize.css/normalize.css">
-	<link rel="icon" type="image/png" href="img/favicon.ico">
+	<!-- fonts CSS -->
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<!-- CSS страницы -->
+	<link rel="stylesheet" href="css/about_me_page.css">
+	<!-- CSS общие стили -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- шрифт логотипа -->
+	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 <body>
+	<!--[if It IE 7]>
+	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/">обновите</a> его.</p>
+	<![endif]-->
+
 <div class="wrapper">
 	<div class="main-content">
-		<!-- ХЕДЕР -->
-		<header>
-			<div id="header-container">
-			<!-- ЛОГОТИП -->
-				<a href="/" id="logo-link">
-					<span id="logo">Timworks</span>
-				</a>
-			<!-- ЛОГОТИП КОНЕЦ -->
-			</div>
-			<!-- СПИСОК СОЦСЕТЕЙ -->
-			<ul id="social">
-				<li class="social-item">
-					<a href="http://vk.com/jz828059" target="_blank" class="socials-link vk">Вконтакте</a>
-				</li>
-				
-				<li class="social-item">
-					<a href="http://twitter.com" target="_blank" class="socials-link vk">Twitter</a>
-				</li>
-				
-				<li class="social-item">
-					<a href="https://www.facebook.com/" target="_blank" class="socials-link vk">Facebook</a>
-				</li>
-				
-				<li class="social-item">
-					<a href="https://github.com/timkhasanov?tab=repositories" target="_blank" class="socials-link vk">Github</a>
-				</li>
-			<!-- СПИСОК СОЦСЕТЕЙ КОНЕЦ -->	
-			</ul>
-		</header>
-		<div class="container"> <!-- контейнер области между футером и хедером -->
-			<!-- САЙДБАР -->
-			<aside>
-				<!-- НАВИГАЦИЯ -->
-				<nav id="navigation">
-					<ul id="navigation-list">
-						<li class="navigation-item">
-							<a class="navigation-link" href="/">Обо мне</a>
+			<!-- хедер -->
+			<header class="header">
+				<div class="container-wide">
+						<!-- логотип -->
+						<div class="logo-wrapper">
+							<a href="/" class="logo-link">
+								<span class="logo">Timworks</span>
+							</a>
+						</div>
+						<!-- логотип конец -->
+						<!-- список соцсетей -->
+						<ul class="social-list">
+							<li class="social-item vk">
+								<a href="http://vk.com/jz828059" target="_blank" class="socials-link vk"><span class="text-hide">вконтакте</span></a>
+							</li>	
+							<li class="social-item tw">
+								<a href="http://twitter.com" target="_blank" class="socials-link vk"><span class="text-hide">twitter</span></a>
+							</li>
+							<li class="social-item fb">
+								<a href="https://www.facebook.com/" target="_blank" class="socials-link vk"><span class="text-hide">facebook</span></a>
+							</li>
+							<li class="social-item gh">
+								<a href="https://github.com/timkhasanov?tab=repositories" target="_blank" class="socials-link vk"><span class="text-hide">github</span></a>
+							</li>
+						</ul>
+						<!-- список соцсетей конец -->
+				</div>
+			</header>
+			<!-- хедер конец -->
+		<div class="page clearfix"> <!-- контейнер области между футером и хедером -->
+			<!-- сайдбар -->
+			<aside class="sidebar">
+				<!-- навигация -->
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="about-item">
+							<a class="about-link" href="/"><div class="about-text">Обо мне</div></a>
 						</li>
-
-						<li class="navigation-item">
-							<a class="navigation-link" href="/">Мои работы</a>
+						<li class="nav-item works">
+							<a class="nav-link" href="/"><div class="nav-text">Мои работы</div></a>
 						</li>
-
-						<li class="navigation-item">
-							<a class="navigation-link" href="/">Связаться со мной</a>
+						<li class="nav-item contact">
+							<a class="nav-link" href="/"><div class="nav-text">Связаться со мной</div></a>
 						</li>
 					</ul>
 				</nav>
-				<!-- НАВИГАЦИЯ КОНЕЦ -->
-				<!-- КОНТАКТЫ -->
-				<adress>
-					<div id="contacts-header">
-						<span id="contacts-header-text">Контакты</span>
+				<!-- навигация конец -->
+				<!-- контакты -->
+				<adress class="adress">
+					<div class="contacts-header">
+						<span class="contacts-header-text">Контакты
 					</div>
-					<ul id="contacts-list">
-						<li id="contacts-item-mail">
-							<a id="contacts-link-mail" href="mailto:jz828059@yandex.ru">jz828059@yandex.ru</a>
+					<ul class="contacts-list">
+						<li class="contacts-item mail-block">
+							<a class="contacts-link mail-text" href="mailto:jz828059@yandex.ru">jz828059@yandex.ru</a>
 						</li>
-
-						<li id="contacts-item-tel">
-							<a id="contacts-link-mail" href="tel:+79117525603">+79117525604</a>
+						<li class="contacts-item tel-block">
+							<a class="contacts-link tel-text" href="tel:+79117525603">+7 (911) 752-56-03</a>
 						</li>
-
-						<li id="contacts-item-skype">
-							<a id="contacts-link-mail" href="skype:jz828059?chat">jz828059</a>
+						<li class="contacts-item skype-block">
+							<a class="contacts-link skype-text" href="skype:jz828059?chat">jz828059</a>
 						</li>
 					</ul>
 				</adress>
-				<!-- КОНТАКТЫ КОНЕЦ -->
+				<!-- контакты конец -->
 			</aside>
-			<!-- САЙДБАР КОНЕЦ -->
-			<!-- БЛОК МЕНЯЮЩЕГОСЯ КОНТЕНТА -->
-			<div id="variable-content">
-				<section class="aboutbox">
-					<div class="aboutbox-header">Основная информация</div>
-					<div class="aboutbox-content">
-					<!-- АВАТАР -->
-						<div id="image-box">
-							<div id="image-wrap">
-								<img src="img/avatar.jpg" alt="Хасанов Тимур" id="avatar">
+			<!-- сайдбар конец -->
+			<!-- блок меняющегося контента -->
+			<div class="variable-content">
+				<div class="section"><!-- первая секция (из трёх) -->
+					<div class="section-header"><span>Основная информация</span></div>
+					<div class="section-content clearfix">
+					<!-- аватар -->
+						<div class="image-box">
+							<div class="image-wrapper">
+								<img src="img/avatar.jpg" alt="Хасанов Тимур" class="avatar">
 							</div>
 						</div>
-					<!-- АВАТАР КОНЕЦ -->
-					<!-- СПРАВА ОТ АВАТАРА СПИСОК ОБО МНЕ -->
-						<ul class="worksheet-list">
-							<li class="worksheet-item clearfix">
-								<div class="worksheet-what">Меня зовут</div>
-								<div class="worksheet-info">Хасанов Тимур Валерьевич</div>
+					<!-- аватар конец -->
+					<!-- список справа от аватара -->
+						<ul class="self-list">
+							<li class="self-list-item clearfix">
+								<div class="self-list-item-theme">Меня зовут:</div>
+								<div class="self-list-item-content">Хасанов Тимур Валерьевич</div>
 							</li>
 
-							<li class="worksheet-item clearfix">
-								<div class="worksheet-what">Мой возраст</div>
-								<div class="worksheet-info">25лет</div>
+							<li class="self-list-item clearfix">
+								<div class="self-list-item-theme">Мой возраст:</div>
+								<div class="self-list-item-content">25 лет</div>
 							</li>
 
-							<li class="worksheet-item clearfix">
-								<div class="worksheet-what">Мой город</div>
-								<div class="worksheet-info">Санкт-Петербург, Россия</div>
+							<li class="self-list-item clearfix">
+								<div class="self-list-item-theme">Мой город:</div>
+								<div class="self-list-item-content">Санкт-Петербург, Россия</div>
 							</li>
 
-							<li class="worksheet-item clearfix">
-								<div class="worksheet-what">Моя специализация</div>
-								<div class="worksheet-info">FRONTEND разработчик</div>
+							<li class="self-list-item clearfix">
+								<div class="self-list-item-theme">Моя специализация:</div>
+								<div class="self-list-item-content">FRONTEND разработчик</div>
 							</li>
 
-							<li class="worksheet-item clearfix">
-								<div class="worksheet-what">Ключевые навыки</div>
-								<div class="worksheet-info">
+							<li class="self-list-item clearfix">
+								<div class="self-list-item-theme">Ключевые навыки:</div>
+								<div class="self-list-item-content">
 									<ul class="skills-list">
 										<li class="skill-item">html</li>
 										<li class="skill-item">css</li>
@@ -129,59 +143,73 @@
 							</li>
 						</ul>	
 					</div>
-					<!-- СПРАВА ОТ АВАТАРА СПИСОК ОБО МНЕ КОНЕЦ -->
-				</section>
-				
-				<!-- ОПЫТ РАБОТЫ -->
-				<section class="aboutbox">
-					<div class="aboutbox-header">Опыт работы</div>
-					<div class="aboutbox-content">
-						<ul class="experience-list">
-							<li class="experience-list-item">
-								<span class="experience-list-item-header">в/ч 62685 - Системный администратор</span>
-								<span class="experience-list-item-text">Июль 2011 - Июль 2013</span>
+					<!-- список справа от аватара конец -->
+				</div><!-- первая секция (из трёх) конец -->
+				<!-- опыт работы -->
+				<div class="section">
+					<div class="section-header"><span>Опыт работы</span></div>
+					<div class="section-content">
+						<ul class="experience-list clearfix">
+							<li class="experience-item clearfix">
+								
+									<div class="bag"></div>
+									<div class="experience-item-info clearfix">
+										<span class="experience-item-header">в/ч 62685 - Системный администратор</span>
+										<span class="experience-item-text">Июль 2011 - Июль 2013</span>
+									</div>
 							</li>
-							<li class="experience-list-item">
-								<span class="experience-list-item-header">ООО "MERLION" - Системный администратор</span>
-								<span class="experience-list-item-text">Июль 2014 - Январь 2015</span>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<!-- ОПЫТ РАБОТЫ КОНЕЦ -->
-				
-				<!-- ОБРАЗОВАНИЕ -->
-				<section class="aboutbox">
-					<div class="aboutbox-header">Образование</div>
-					<div class="aboutbox-content">
-						<ul class="experience-list">
-							<li class="experience-list-item">
-								<span class="experience-list-item-header">СПБ ГУТ им. М.А. Бонч-Бруевича</span>
-								<span class="experience-list-item-text">2006-2011</span>
-							</li>
-							<li class="experience-list-item">
-								<span class="experience-list-item-header">Курсы Loftschool</span>
-								<span class="experience-list-item-text">Апрель 2015 - по настоящее время</span>
+							<li class="experience-item clearfix">
+								
+									<div class="bag"></div>
+									<div class="experience-item-info clearfix">
+										<span class="experience-item-header">ООО "MERLION" - Системный администратор</span>
+										<span class="experience-item-text">Июль 2014 - Январь 2015</span>
+									</div>		
 							</li>
 						</ul>
 					</div>
-				</section>
-				<!-- ОБРАЗОВАНИЕ КОНЕЦ -->
+				</div>
+				<!-- опыт работы конец -->
+				<!-- образование -->
+				<div class="section"> <!-- вторая секция -->
+					<div class="section-header">Образование</div>
+					<div class="section-content">
+						<ul class="experience-list clearfix">
+							<li class="experience-item clearfix">
+									<div class="teach1"></div>
+									<div class="experience-item-info clearfix">
+									<span class="experience-item-header">СПБ ГУТ им. М.А. Бонч-Бруевича</span>
+									<span class="experience-item-text">Июль 2006- Июль 2011</span>
+								</div>
+							</li>
+							<li class="experience-item clearfix">
+								<div class="teach2"></div>
+								<div class="experience-item-info clearfix">
+									
+									<span class="experience-item-header">Курсы Loftschool</span>
+									<span class="experience-item-text">Апрель 2015 - по настоящее время</span>
+								</div>	
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- образование конец -->
 
 			</div>
-			<!-- БЛОК МЕНЯЮЩЕГОСЯ КОНТЕНТА КОНЕЦ -->
-		</div>
-	</div>
-</div>
-
-<footer>
-	<div class="content_wrapper">
-		<div id="login">Войти</div>
-		<p id="copyright">&copy 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
+			<!-- блок меняющегося контента конец -->
+		
+		</div> <!-- блок контейнера области между футером и хедером конец -->
+	</div> <!-- main content конец блока -->
+</div> <!-- wrapper конец блока -->
+<footer class="footer">
+	<div class="footer-content">
+		<div class="login">Войти</div>
+		<p class="copyright">&copy 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
 	</div>
 </footer>
+</div>
 <script src="js/main.js"></script>
 <script src="app/bower/jquery/dist/jquery.min.js"></script>
-<script src="app/bower/modernizr/modernizr.js.js"></script>
+<script src="app/bower/modernizr/modernizr.js"></script>
 </body>
 </html>

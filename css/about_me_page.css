@@ -1,0 +1,26 @@
+.about-item {
+	list-style: none;
+	height: 73px;
+	width: 250px;
+	margin: 0px 0px -2px 0px;
+	display: block;
+	background-color: #3ba8c0;
+	/*border-radius: 4px;*/
+}	
+.about-link {
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	height: 73px;
+}
+.about-link:visited {
+	color: #959aa8;
+}
+.about-text {
+	position: relative;
+	top: 21px;
+	left: 27px;
+	color: white;
+	font-size: 23px;
+}
