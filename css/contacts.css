@@ -1,0 +1,191 @@
+/* правка меню навигации */
+.cont-item {
+	list-style: none;
+	height: 73px;
+	width: 250px;
+	margin: 0px 0px -2px 0px;
+	display: block;
+	background-color: #3ba8c0;
+}	
+.cont-link {
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	height: 73px;
+}
+.cont-link:visited {
+	color: #959aa8;
+}
+.cont-text {
+	position: relative;
+	top: 21px;
+	left: 27px;
+	color: white;
+	font-size: 23px;
+}
+/* контент */
+.section-contacts {
+	border-radius: 4px;
+	margin-bottom: 34px;
+	background-color: #EFF2F7;
+	overflow: hidden;
+
+}
+.section-contacts-header {
+	margin: 0;
+	padding: 42px 0px;
+	height: 38px;
+	width: 100%;
+	background-color: #48cbe8; 
+	border-bottom: 17px solid;
+	border-color: #79def5 ;
+	color: white;
+	text-align: center;
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	text-align: center;
+}
+.form-wrapper {
+	margin: 42px auto 80px auto;
+	width: 402px;
+	height: 100%;
+}
+/* стили первых двух форм */
+.top-line-wrapper {
+	width: 402px;
+	margin: 0 0 11px 0;
+	padding: 0px;
+}
+.top-line-form {
+	line-height: 1.4;
+	color: #4a544d;
+	float: left;
+	width: 194px;
+	padding: 0;
+	margin: 0;
+}
+/*расстояние между верхними формами*/
+.top-line-wrapper>*:first-child {
+	margin-right: 14px;
+}
+.top-line-form-label {
+	color: #959aa8;
+	font-size: 19px;
+}
+.top-line-form-field {
+	padding: 0;
+	margin: 0;
+}
+/* стили инпута верхних двух форм*/
+.control {
+	width: 173px;
+	height: 26px;
+	border: 1px solid #79def5;
+	border-radius: 4px;
+	color: #48cbe8;
+	font-family: 'fira_sanslight';
+	cursor: auto;
+	padding: 7px 9px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+   color: #48cbe8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #48cbe8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #48cbe8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: #48cbe8;
+}
+/* форма сообщения */
+.message-field {
+	width: 380px;
+	height: 165px;
+	border: 1px solid #79def5;
+	border-radius: 4px;
+	color: #48cbe8;
+	font-family: 'fira_sanslight';
+	cursor: auto;
+	padding: 7px 9px;
+}
+.confirmation-code {
+	width: 172px;
+	height: 15px;
+	border: 1px solid #79def5;
+	border-radius: 4px;
+	color: #48cbe8;
+	font-family: 'fira_sanslight';
+	cursor: auto;
+	padding: 7px 9px;
+	font-size: 13px;
+}
+.captcha-image {
+	background-color: #fbfcfd;
+	width: 190px;
+	height: 77px;
+	border-radius: 4px;
+	border: 1px solid #79def5;
+	overflow: hidden;
+	background-image: url(../img/captcha.png);
+	background-repeat: no-repeat;
+	background-position: 14px 18px;
+	float: left;
+}
+.captcha-wrapper-inside {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.captcha-wrapper {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.confirmation-code-wrapper {
+	float: right;
+	padding-top: 22px;
+}
+.buttons-wrapper {
+	padding-top: 33px;
+z
+}
+.button {
+	width: 140px;
+	height: 33px;
+}
+.button.send {
+	background: #48cbe8;
+	border: 2px solid #48cbe8;
+	border-bottom-color: #3ba8c0;
+	cursor: pointer;
+	font-size: 19px;
+	font-family: 'fira_sansbook';
+	color: white;
+	padding: 0;
+	min-width: 140px;
+	border-radius: 4px;
+	float: left;
+}
+.button.send:focus {
+	border: 2px solid #48cbe8;
+}
+.button.clear {
+	background: #849db5;
+	border: 2px solid #849db5;
+	border-bottom-color: #687b8f;
+	cursor: pointer;
+	font-size: 19px;
+	font-family: 'fira_sansbook';
+	color: white;
+	padding: 0px;
+	min-width: 140px;
+	border-radius: 4px;
+	float: right;
+}
+.button.clear:focus {
+	border: 2px solid #849db5;
+}

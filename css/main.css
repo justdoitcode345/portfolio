@@ -6,11 +6,8 @@ body {
 html {
 	height: 100%;
 }
-.wrapper {
-
-}
-.main-content {
-
+:focus {
+	outline: 0;
 }
 /* хедер */
 .header {
@@ -70,22 +67,6 @@ html {
 	height: 100%;
 	width: 100%;
 }
-/*.social-item {
-	float: left;
-	display: inline-block;
-	padding: 0 0 0 24px;
-	margin: 0;
-	list-style: none;
-	top: 0;
-}
-.social-item a {
-	display: block;
-	width: 47px;
-	height: 47px; 
-	margin: 0px;
-	padding: 0px;
-	float: right;
-}*/
 .text-hide {
 	position: absolute;
 	left: -9999px;
@@ -126,7 +107,7 @@ html {
 	width:650px;
 	float: right;
 	border-radius: 4px;
-	margin-bottom: 12px;
+	margin-bottom: 0;
 }
 /* меню навигации */
 .nav  {
@@ -205,6 +186,7 @@ html {
 	top: 7px;
 	left: 80px;
 	display: block;
+	cursor: pointer;
 }
 .contacts-link:visited {
 	color: white;
@@ -227,13 +209,7 @@ html {
 	background-position-y: -103px;
 	background-position-x: 27px;
 }
-/* контент, секция первая */
-.section {
-	border-radius: 4px;
-	margin-bottom: 24px;
-	background-color: #EFF2F7;
-	padding-bottom: 40px;
-}
+/* универсальный блок главного контента */
 .section-header {
 	font-family: 'fira_sansbook';
 	font-size: 27px;
@@ -249,76 +225,6 @@ html {
 	margin: 0 auto;
 	height: 30px;
 }
-/* аватар */
-.image-box {
-	width: 150px;
-	height: 150px;
-	float: left;
-	margin: 43px 0 0 55px;
-}
-.image-wrapper {
-	height: 142px;
-	width: 142px;
-	border-color: #1b9ab4;
-	border-style: solid;
-	border-radius: 50%;
-	border-width: 4px;
-	overflow: hidden;
-}
-.self-list {
-	float: left;
-	width: 400px;
-	list-style-type: none;
-	font-family: 'fira_sansmedium';
-	padding: 0;
-	margin: 21px 0 0 24px;
-	font-size: 15px;
-}
-.self-list-item {
-	min-height: 33px;
-	color: #4a545d;
-	font-size: 17px;
-}
-.self-list-item-theme {
-	float: left;
-}
-.self-list-item-content {
-	float: left;
-	margin-left: 18px;
-	font-family: 'fira_sansbook';
-	font-size: 15px;
-	margin-top: 2px;
-	max-width: 260px;
-}
-
-.skills-list {
-	display: inline-block;
-	list-style: none;
-	padding: 0;
-	width: 220px;
-	margin-left: -1px;
-}
-.skill-item {
-	display: inline-block;
-	padding: 2px 14px;
-	margin: 5px 2px;
-	background: #3aa8c1; /* Old browsers */
-	background: -moz-linear-gradient(top,  #3aa8c1 0%, #3aa8bf 50%, #a1d54f 50%, #2d8ca2 50%, #2d8ca2 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3aa8c1), color-stop(50%,#3aa8bf), color-stop(50%,#a1d54f), color-stop(50%,#2d8ca2), color-stop(100%,#2d8ca2)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #3aa8c1 0%,#3aa8bf 50%,#a1d54f 50%,#2d8ca2 50%,#2d8ca2 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #3aa8c1 0%,#3aa8bf 50%,#a1d54f 50%,#2d8ca2 50%,#2d8ca2 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #3aa8c1 0%,#3aa8bf 50%,#a1d54f 50%,#2d8ca2 50%,#2d8ca2 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #3aa8c1 0%,#3aa8bf 50%,#a1d54f 50%,#2d8ca2 50%,#2d8ca2 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3aa8c1', endColorstr='#2d8ca2',GradientType=0 ); /* IE6-9 */font-size: 14px;
-	color: white;
-	border-radius: 4px;
-	font-family: 'proxima_nova_condensedSBd';
-}
-
-
-
-
-/* опыт работы */
 .section-education {
 	background-color: #EFF2F7;
 	padding: 0px;
@@ -330,62 +236,6 @@ html {
 	background-color: #EFF2F7;
 	padding-bottom: 17px;
 }
-.experience-list {
-	list-style: none;
-	color: #4a545d;
-	padding: 0px;
-	margin: 0;
-	text-align: left;
-}
-.experience-item {
-	margin: 0px 19px 5px 19px;
-}
-.icon-education {
-	background-image: url(../img/ic_work.png);
-  	display: block;
-  	background-repeat: no-repeat;
-    position: center;
- 	padding: 0 0 0 90px;
-  	background-position: 23px 50%;
-}
-
-.icon-study {
-	background-image: url(../img/ic_study.png);
-  	display: block;
-  	background-repeat: no-repeat;
-    position: center;
-  	padding: 0 0 0 90px;
-  	background-position: 20px 50%;
-}
-.icon-course {
-	background-image: url(../img/ic_course.png);
-  	display: block;
-  	background-repeat: no-repeat;
-    position: center;
-  	padding: 0 0 0 90px;
-  	background-position: 27px 50%;
-}
-
-
-.experience-item-info {
-	
-	width: 360px;
-	margin: 6px 0 0 30px;
-}
-.experience-item-header {
-	font-size: 17px;
-	font-family: 'fira_sansbook';
-	padding-top: 4px;
-}
-.experience-item-text {
-	font-size: 15px;
-	font-family: 'fira_sanslight';
-	pas
-}
-
-
-
-
 /* футер */
 .footer {
 	background: #eff3f7 url(../img/border.png) top center no-repeat;
@@ -412,8 +262,7 @@ html {
 }
 .login-link:hover {
 	background-image: url(../img/ic_unlock.png);
-	background-position: 2px 1
-	x;
+	background-position: 2px 1px;
 }
 .copyright {
 	font-family: 'fira_sanslight';
