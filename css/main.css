@@ -127,16 +127,16 @@ html {
 }
 .nav-item {
 	list-style: none;
-	height: 73px;
 	border-bottom: 2px solid #4eafc5;
 	margin: 0px 10px -2px 10px;
+	padding: 25px 10px 15px 15px;
+	width: 205px;
 }
 .nav-link {
 	display: block;
 	text-align: left;
 	text-decoration: none;
 	color: #959aa8;
-	height: 73px;
 }
 .nav-link:visited {
 	color: #959aa8;
@@ -145,9 +145,10 @@ html {
 	color: #4eafc5;
 }
 .nav-text {
-	position: relative;
+	/*position: relative;
 	top: 22px;
-	left: 17px;
+	left: 17px;*/
+	line-height: 1.6;
 }
 /* контакты */
 .adress {
@@ -160,7 +161,6 @@ html {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-
 }
 .contacts-header {
 	height: 40px;
@@ -192,7 +192,6 @@ html {
 	cursor: pointer;
 	width: 180px;
 	margin: 0;
-
 }
 .contacts-link:visited {
 	color: white;
@@ -200,7 +199,6 @@ html {
 .contacts-link:hover {
 	text-decoration: underline;
 }
-
 .mail-block {
 	background-color: #4ab8d0;
 	background-position-y: -4px;
@@ -265,7 +263,6 @@ html {
 	height: 35px;
 	background-image: url(../img/ic_lock.png);
 	background-repeat: no-repeat;
-
 }
 .login-link:hover {
 	background-image: url(../img/ic_unlock.png);
@@ -284,7 +281,6 @@ html {
 	margin: 0 auto;
 	height: 68px;
 	text-align: center;
-
 }
 /* прибивка футера к низу */
 .wrapper {

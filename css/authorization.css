@@ -1,0 +1,86 @@
+.authorization-wrapper {
+	background-color: #eff3f7;
+	width: 590px;
+	height: 484px;
+	border-radius: 4px;
+	overflow: hidden;
+	margin: 15% auto 30px;
+	text-align: center;
+}
+.auth-header {
+	background-color: #48cbe8; 
+	border-bottom: 15px solid;
+	border-color: #79def5 ;
+	color: white;
+	text-align: center;
+	font-family: 'fira_sansbook';
+	font-size: 40px;
+	width: 100%;
+	height: 74px;
+	padding-top: 18px;
+	margin-bottom: 15px;
+}
+.auth-form{
+	text-align: center;
+	display: block;
+	margin-bottom: 35px; 
+}
+.auth-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	text-align: center;
+}
+.auth-list-item {
+	margin: 0 auto 11px;
+	width: 424px;
+}
+.auth-label{
+	margin: 0 auto;
+	color: #959aa8;
+	font-size: 36px;
+	line-height: 1.65;
+}
+.auth-button {
+	background: #48cbe8;
+	border: 4px solid #48cbe8;
+	border-bottom-color: #3ba8c0;
+	cursor: pointer;
+	font-size: 19px;
+	font-family: 'fira_sansbook';
+	color: white;
+	padding: 0;
+	min-width: 140px;
+	border-radius: 6px;
+	margin: 0 auto;
+	width: 226px;
+	height: 54px;
+	font-size: 37px;
+	line-height: 1.3;
+}
+.auth-button:focus {
+	border-bottom-color: #48cbe8;
+}
+.auth-input-field {
+	border: 1px solid #79def5;
+	border-radius: 4px;
+	color: #48cbe8;
+	font-family: 'fira_sanslight';
+	padding: 16px 19px;
+	font-size: 17px;
+	width: 384px;
+}
+/* цвет текста placeholder */
+::-webkit-input-placeholder { /* WebKit browsers */
+   color: #48cbe8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #48cbe8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #48cbe8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: #48cbe8;
+}

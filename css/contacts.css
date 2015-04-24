@@ -1,26 +1,22 @@
 /* правка меню навигации */
 .cont-item {
 	list-style: none;
-	height: 73px;
-	width: 250px;
+	width: 224px;
 	margin: 0px 0px -2px 0px;
 	display: block;
-	background-color: #3ba8c0;
+	background-color: #3ba8c0 !important;
+	padding: 21px 0 15px 26px;
 }	
 .cont-link {
 	display: block;
 	text-align: left;
 	text-decoration: none;
 	color: white;
-	height: 73px;
 }
 .cont-link:visited {
 	color: #959aa8;
 }
 .cont-text {
-	position: relative;
-	top: 21px;
-	left: 27px;
 	color: white;
 	font-size: 23px;
 }
@@ -30,7 +26,6 @@
 	margin-bottom: 34px;
 	background-color: #EFF2F7;
 	overflow: hidden;
-
 }
 .section-contacts-header {
 	margin: 0;
@@ -44,7 +39,6 @@
 	text-align: center;
 	font-family: 'fira_sansbook';
 	font-size: 27px;
-	text-align: center;
 }
 .form-wrapper {
 	margin: 42px auto 80px auto;
@@ -88,7 +82,6 @@
 	cursor: auto;
 	padding: 7px 9px;
 }
-
 ::-webkit-input-placeholder { /* WebKit browsers */
    color: #48cbe8;
 }
@@ -151,7 +144,6 @@
 }
 .buttons-wrapper {
 	padding-top: 33px;
-z
 }
 .button {
 	width: 140px;

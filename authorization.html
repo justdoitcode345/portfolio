@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>авторизация</title>
+	<!-- SEO -->
+	<meta name="description" content="homework04">
+	<meta name="keywords" content="homework04">
+	<meta name="author" content="Khasanov Timur">
+	<!-- vendor CSS -->
+	<link rel="stylesheet" href="app/bower/normalize.css/normalize.css">
+	<!-- fonts CSS -->
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<!-- CSS страницы -->
+	<link rel="stylesheet" href="css/authorization.css">
+	<!-- CSS общие стили -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- шрифт логотипа -->
+	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<script src="js/main.js"></script>
+	<script src="app/bower/jquery/dist/jquery.min.js"></script>
+	<script src="app/bower/modernizr/modernizr.js"></script>
+	<script type="text/javascript" src="app/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+</head>
+<body>
+	<!--[if It IE 7]>
+	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/">обновите</a> его.</p>
+	<![endif]-->
+<div class="wrapper">
+	<div class="main-content">
+		<div class="authorization-wrapper">
+			<div class="auth-header">
+			Авторизируйтесь
+			</div>
+			<form class="auth-form">
+				<ul class="auth-list">
+					<li class="auth-list-item">
+						<label class="auth-label">Логин</label>
+						<input class="auth-input-field" placeholder="Введите логин">
+					</li>
+					<li class="auth-list-item">
+						<label class="auth-label">Пароль</label>
+						<input class="auth-input-field" placeholder="Введите пароль" type="password">
+					</li>		
+				</ul>
+			</form>
+			<button class="auth-button">Войти</button>
+		</div>
+	</div> <!-- main content конец блока -->
+</div> <!-- wrapper конец блока -->
+<footer class="footer">
+	<div class="footer-content clearfix">
+		<div class="footer-login"><a href="index.html" class="login-link lock"><span class="text-hide">Войти</span></a></div>
+		<p class="copyright">&copy 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
+	</div>
+</footer>
+</div>
+<script type="text/javascript">jQuery('input[placeholder], textarea[placeholder]').placeholder();
+</script>
+</body>
+</html>

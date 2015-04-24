@@ -1,25 +1,21 @@
 .about-item {
 	list-style: none;
-	height: 73px;
-	width: 250px;
+	width: 224px;
 	margin: 0px 0px -2px 0px;
 	display: block;
 	background-color: #3ba8c0 !important;
+	padding: 21px 0 15px 26px;
 }	
 .about-link {
 	display: block;
 	text-align: left;
 	text-decoration: none;
 	color: white;
-	height: 73px;
 }
 .about-link:visited {
 	color: #959aa8;
 }
 .about-text {
-	position: relative;
-	top: 21px;
-	left: 27px;
 	color: white;
 	font-size: 23px;
 }
@@ -86,7 +82,6 @@
 	margin-top: 2px;
 	max-width: 260px;
 }
-
 .skills-list {
 	display: inline-block;
 	list-style: none;

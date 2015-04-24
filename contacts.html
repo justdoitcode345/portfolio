@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru-RU">
 <script src="js/main.js"></script>
 <script src="app/bower/jquery/dist/jquery.min.js"></script>
@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>homework04</title>
+	<title>связаться со мной</title>
 	<!-- SEO -->
 	<meta name="description" content="homework04">
 	<meta name="keywords" content="homework04">
@@ -23,41 +23,51 @@
 	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
 	<!-- favicon -->
 	<link rel="icon" type="image/png" href="img/favicon.png">
+	<script src="js/main.js"></script>
+	<script src="app/bower/jquery/dist/jquery.min.js"></script>
+	<script src="app/bower/modernizr/modernizr.js"></script>
+	<script type="text/javascript" src="app/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 </head>
 <body>
 	<!--[if It IE 7]>
 	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/">обновите</a> его.</p>
 	<![endif]-->
-
 <div class="wrapper">
 	<div class="main-content">
-			<!-- хедер -->
-			<header class="header">
-				<div class="container-wide">
-						<!-- логотип -->
-						<div class="logo-wrapper">
-							<a href="/" class="logo-link">
-								<span class="logo">Timworks</span>
-							</a>
-						</div>
-						<!-- логотип конец -->
-						<!-- список соцсетей -->
-						<ul class="social-list">
-							<li class="social-item vk">
-								<a href="http://vk.com/jz828059" target="_blank" class="socials-link vk"><span class="text-hide">вконтакте</span></a>
-							</li>	
-							<li class="social-item tw">
-								<a href="http://twitter.com" target="_blank" class="socials-link vk"><span class="text-hide">twitter</span></a>
-							</li>
-							<li class="social-item fb">
-								<a href="https://www.facebook.com/" target="_blank" class="socials-link vk"><span class="text-hide">facebook</span></a>
-							</li>
-							<li class="social-item gh">
-								<a href="https://github.com/timkhasanov?tab=repositories" target="_blank" class="socials-link vk"><span class="text-hide">github</span></a>
-							</li>
-						</ul>
-						<!-- список соцсетей конец -->
+		<!-- хедер -->
+		<header class="header">
+			<div class="container-wide">
+				<!-- логотип -->
+				<div class="logo-wrapper">
+					<a href="/" class="logo-link">
+						<span class="logo">Timworks</span>
+					</a>
 				</div>
+				<!-- логотип конец -->
+				<!-- список соцсетей -->
+				<ul class="social-list">
+					<li class="social-item vk">
+						<a href="http://vk.com/jz828059" target="_blank" class="socials-link vk">
+							<span class="text-hide">вконтакте</span>
+						</a>
+					</li>	
+					<li class="social-item tw">
+						<a href="http://twitter.com" target="_blank" class="socials-link vk">	<span class="text-hide">twitter</span>
+						</a>
+					</li>
+					<li class="social-item fb">
+						<a href="https://www.facebook.com/" target="_blank" class="socials-link vk">
+							<span class="text-hide">facebook</span>
+						</a>
+					</li>
+					<li class="social-item gh">
+						<a href="https://github.com/timkhasanov?tab=repositories" target="_blank" class="socials-link vk">
+							<span class="text-hide">github</span>
+						</a>
+					</li>
+				</ul>
+				<!-- список соцсетей конец -->
+			</div> <!-- div container-wide конец -->
 			</header>
 			<!-- хедер конец -->
 		<div class="page clearfix"> <!-- контейнер области между футером и хедером -->
@@ -66,22 +76,28 @@
 				<!-- навигация -->
 				<nav class="nav">
 					<ul class="nav-list">
-						<li class="nav-item">
-							<a class="nav-link" href="index.html"><div class="nav-text">Обо мне</div></a>
-						<li class="nav-item">
-							<a class="nav-link" href="my_works.html"><div class="nav-text">Мои работы</div></a>
+						<a class="nav-link" href="index.html">
+						<li class="nav-item works">
+							<div class="nav-text">Обо мне</div>
 						</li>
+						</a>
+						<a class="nav-link" href="my_works.html">
+						<li class="nav-item works">
+							<div class="nav-text">Мои работы</div>
+						</li>
+						</a>
+						<a class="cont-link" href="contacts.html">
 						<li class="cont-item">
-							<a class="cont-link" href="contacts.html"><div class="cont-text">Связаться со мной</div></a>
+							<div class="cont-text">Связаться со мной</div>
 						</li>
-						
+						</a>
 					</ul>
 				</nav>
 				<!-- навигация конец -->
 				<!-- контакты -->
 				<adress class="adress">
 					<div class="contacts-header">
-						<span class="contacts-header-text">Контакты
+						<span class="contacts-header-text">Контакты</span>
 					</div>
 					<ul class="contacts-list">
 						<li class="contacts-item mail-block">
@@ -101,79 +117,73 @@
 			<!-- блок меняющегося контента -->
 			<div class="variable-content">
 				<div class="section-contacts">
-				<div class="section-contacts-header">
-					У вас интересный проект? Напишите мне
-				</div>
-				
-				<form id="send-mail" class="send-mail">
-					<div class="form-wrapper"> <!-- общий большой контейнер форм -->
-						<div class="top-line-wrapper clearfix"> <!-- обёртка для двух верхних форм --> 
-							<!-- первая верхняя форма -->
-							<div class="top-line-form">
-								<div class="top-line-form-label">Имя</div>
-								<div class="top-line-form-field">
-									<span class="form-tip"></span>
-									<input class="control intput-required" type="text" name="name" placeholder="Как к Вам обращаться">
+					<div class="section-contacts-header">У вас интересный проект? Напишите мне</div>
+					<form id="send-mail" class="send-mail">
+						<div class="form-wrapper"> <!-- общий большой контейнер форм -->
+							<div class="top-line-wrapper clearfix"> <!-- обёртка для двух верхних форм --> 
+								<!-- первая верхняя форма -->
+								<div class="top-line-form">
+									<div class="top-line-form-label">Имя</div>
+									<div class="top-line-form-field">
+										<span class="form-tip"></span>
+										<input class="control intput-required" type="text" name="name" placeholder="Как к Вам обращаться">
+									</div>
 								</div>
+								<!-- первая верхняя форма конец -->
+								<!-- вторая верхняя форма -->
+								<div class="top-line-form">
+									<div class="top-line-form-label">Email</div>
+									<div class="top-line-form-field">
+										<span class="form-tip"></span>
+										<input class="control intput-required" type="text" name="email" placeholder="Куда мне писать">
+									</div>
+								</div>
+								<!-- вторая верхняя форма конец -->
+							</div> <!-- top-line-wrapper clearfix конец -->
+							<!-- обёртка для двух верхних форм конец -->
+							<!-- форма основного сообщения -->
+							<div class="message">
+								<div class="top-line-form-label">Сообщение</div>
+									<div class="main-form-field">
+										<span class="form-tip"></span>
+										<textarea class="message-field" type="text" name="message" placeholder="Кратко в чём суть"></textarea>
+									</div>
 							</div>
-							<!-- первая верхняя форма конец -->
-							<!-- вторая верхняя форма -->
-							<div class="top-line-form">
-								<div class="top-line-form-label">Email</div>
-								<div class="top-line-form-field">
-									<span class="form-tip"></span>
-									<input class="control intput-required" type="text" name="email" placeholder="Куда мне писать">
+							<!-- форма основного сообщения конец -->
+							<!-- форма капчи -->
+							<div class="captcha-wrapper">
+								<div class="top-line-form-label">Введите код, указанный на картинке</div>
+								<div class="capcha-wrapper-inside clearfix">
+									<div class="captcha-image">
+									</div>
+									<div class="confirmation-code-wrapper">
+										<input class="confirmation-code" type="text" name="confirmation" placeholder="Введите код">
+									</div>
 								</div>
-							</div>
-							<!-- вторая верхняя форма конец -->
-							<!-- форма сообщения -->
-						</div>
-						<!-- обёртка для двух верхних форм конец -->
-						<!-- форма основного сообщения -->
-						<div class="message">
-							<div class="top-line-form-label">Сообщение</div>
-								<div class="main-form-field">
-									<span class="form-tip"></span>
-									<textarea class="message-field" type="text" name="message" placeholder="Кратко в чём суть"></textarea>
-								</div>
-						</div>
-						<!-- форма основного сообщения конец -->
-						<!-- форма капчи -->
-						<div class="captcha-wrapper">
-							<div class="top-line-form-label">Введите код, указанный на картинке</div>
-							<div class="capcha-wrapper-inside clearfix">
-								<div class="captcha-image">
-								</div>
-								<div class="confirmation-code-wrapper">
-									<input class="confirmation-code" type="text" name="confirmation" placeholder="Введите код">
-								</div>
-							</div>
 						</div>
 						<!-- форма капчи конец -->
-				</form>	
+					</form>	
 						<!-- кнопки внизу формы связи -->
 						<div class="buttons-wrapper">
 							<button class="button send" name="отправить" form="send-mail">Отправить</button>
-							<button class="button clear" name="очистить" form="send-mail">Очистить</button>
+							<button class="button clear" name="очистить" form="send-mail" type="reset">Очистить</button>
 						</div>
 						<!-- кнопки внизу формы связи конец -->
 					</div>
-				
 				</div>
 			</div>
 			<!-- блок меняющегося контента конец -->
-		
 		</div> <!-- блок контейнера области между футером и хедером конец -->
 	</div> <!-- main content конец блока -->
 </div> <!-- wrapper конец блока -->
-
 <footer class="footer">
 	<div class="footer-content clearfix">
-		<div class="footer-login"><a href="login.html" class="login-link lock"><span class="text-hide">Войти</span></a></div>
+		<div class="footer-login"><a href="authorization.html" class="login-link lock"><span class="text-hide">Войти</span></a></div>
 		<p class="copyright">&copy 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
 	</div>
 </footer>
 </div>
-
+<script type="text/javascript">jQuery('input[placeholder], textarea[placeholder]').placeholder();
+</script>
 </body>
 </html>

@@ -1,27 +1,22 @@
 .myworks-item {
 	list-style: none;
-	height: 73px;
-	width: 250px;
+	width: 198px;
 	margin: 0px 0px -2px 0px;
 	display: block;
-	background-color: #3ba8c0;
-	/*border-radius: 4px;*/
+	background-color: #3ba8c0 !important;
+	padding: 21px 26px 15px 26px;
 }	
 .myworks-link {
 	display: block;
 	text-align: left;
 	text-decoration: none;
 	color: white;
-	height: 73px;
 }
 .myworks-link:visited {
 	color: #959aa8;
 }
 .myworks-text {
-	position: relative;
-	top: 21px;
-	left: 27px;
-	color: white;
+color: white;
 	font-size: 23px;
 }
 /* пошёл главный контент variable-content */
@@ -34,34 +29,25 @@
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
-
 }
 .project-item {
 	text-align: center;
 	width: 30%;
 	display: inline-block;
 	margin: 14px 1.25% 28px;
-}
-.one {
-	background-image: url(../img/projects/project1.jpg);
-}
-.two {
-	background-image: url(../img/projects/project2.jpg);
-}
-.three {
-	background-image: url(../img/projects/project3.jpg);
-}
-.four {
-	background-image: url(../img/projects/project4.jpg);
+	float: left;
 }
 .img-wrapper.add {
 	background-color: #ecfbff;
 	opacity: 64%;
 	border: 1px dashed #3ba8c0;
-	background-image: url(../img/projects/new_project.png);
 	background-repeat: no-repeat;
 	background-position: 50% 35%;
-	margin: 0 0 32.25% 0;
+}
+.project-img.add {
+	position: relative;
+	top: 35px;
+	left: 54px;
 }
 .img-wrapper {
 	border: 2px solid #3ba8c0;
@@ -83,7 +69,6 @@
 	font-size: 15px;
 	line-height: 20px;
 }
-
 .b-popup{
     width:100%;
     min-height:100%;
@@ -102,7 +87,6 @@
     box-shadow: 0px 0px 10px #000;
     overflow: hidden;
 }
-
 .close-form {
 	float: right;
 	background-image: url(../img/close.png);
@@ -116,7 +100,6 @@
 	margin: 5px 21px 0 21px;
 	padding: 0px;
 }
-
 .project-add-header {
 	margin: 0;
 	padding: 9px;
@@ -125,7 +108,6 @@
 	border-bottom: 9px solid;
 	border-color: #79def5 ;
 	color: white;
-	
 	font-family: 'fira_sansbook';
 	font-size: 25px;
 	text-align: center;
@@ -159,10 +141,6 @@
 :-ms-input-placeholder { /* Internet Explorer 10+ */
    color: #48cbe8;
 }
-.project-input.p-name {
-	
-}
-
 .project-add-list-item-header {
 	color: #959aa8;
 	font-size: 17px;
@@ -195,8 +173,6 @@ border: 2px solid #48cbe8;
 }
 .upload-cloud {
 	position: relative;
-	/*right: -267px;*/
-	/*top: -42px;*/
 	width: 50px;
 	height: 39px;
 	background-color: #79def5;
@@ -211,4 +187,12 @@ border: 2px solid #48cbe8;
 }
 .upload-image-wrapper {
 	height: 43px
+}
+.project-add-label {
+	font-family: 'fira_sansbook';
+	font-size: 13px;
+	position: relative;
+	top: 58px;
+	left: -17px;
+	color: #3ba8c0;
 }
