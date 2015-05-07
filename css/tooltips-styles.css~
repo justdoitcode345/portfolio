@@ -1,0 +1,13 @@
+.tooltipster-portfolio {
+	-webkit-border-radius: 2px;
+	        border-radius: 2px; 
+	border: 1px solid #f97e76;
+	background: #f97e76;
+	color: #fff;
+}
+.tooltipster-portfolio .tooltipster-content {
+	font-family: fira_sansbook;
+	font-size: 13px;
+	line-height: 16px;
+	padding: 4px 12px;
+}  

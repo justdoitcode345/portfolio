@@ -37,6 +37,11 @@ color: white;
 	margin: 14px 1.25% 28px;
 	float: left;
 }
+.project-item:nth-child(3n+1) {
+  margin-left: 0;
+  clear: left;
+}
+
 .img-wrapper.add {
 	background-color: #ecfbff;
 	opacity: 64%;
@@ -59,6 +64,34 @@ color: white;
 	overflow: hidden;
 	cursor: pointer;
 }
+
+
+.project-hover {
+	background-color: rgba( 61, 142, 185, 0.75);
+	width: 100%;
+	height: 131px;
+	float: left;
+	position: relative;
+	top: -136px;
+	left: 0;
+	opacity: 0;
+	text-align: center;
+}
+.project-hover-label{
+	color: #eff3f7;
+	border: 2px solid;
+	border-color: #eff3f7;
+	margin: 56px auto 0px auto;
+	border-radius: 6px;
+	font-family: 'fira_sansbook';
+	font-size: 12px;
+	width: 60px;
+	line-height: 1.4;
+} 
+.project-hover:hover {
+	opacity: 1;
+}
+
 .project-link {
 	color: #3ba8c0;
 	font-size: 13px;
@@ -69,23 +102,26 @@ color: white;
 	font-size: 15px;
 	line-height: 20px;
 }
-.b-popup{
+#popup1.b-popup{
     width:100%;
     min-height:100%;
-    background-color: rgba(0,0,0,0.75);
-    overflow:hidden;
+    /*background-color: rgba(0,0,0,0.75) !important ;
+    overflow:hidden;*/
     position:fixed;
     top:0px;
     display:none;
 }
 .b-popup .b-popup-content{
-    margin: 17% auto 0px auto;
+    margin: 10% auto 0px auto;
     width: 362px;
     padding: 0px;
     background-color: #eff3f7;
     border-radius:4px;
     box-shadow: 0px 0px 10px #000;
     overflow: hidden;
+}
+.close-popup{
+	cursor: pointer;
 }
 .close-form {
 	float: right;
@@ -149,6 +185,11 @@ color: white;
 .project-input.p-desc {
 	height: 90px;
 }
+
+.project-input.p-image {
+	
+}
+
 .project-add-button {
 	background: #48cbe8;
 	border: 2px solid #48cbe8;
@@ -174,17 +215,22 @@ border: 2px solid #48cbe8;
 .upload-cloud {
 	position: relative;
 	width: 50px;
-	height: 39px;
+	height: 41px;
 	background-color: #79def5;
 	border: 1px solid #79def5;
 	overflow: hidden;
 	right: -268px;
-	top: -42px;
+	top: -43px;
 	border-radius: 0 4px 4px 0;
 	background-image: url(../img/upload.png);
 	background-repeat: no-repeat;
 	background-position: 10px 7px;
 }
+
+#fileinput {
+	opacity: 0;
+}
+
 .upload-image-wrapper {
 	height: 43px
 }
@@ -195,4 +241,60 @@ border: 2px solid #48cbe8;
 	top: 58px;
 	left: -17px;
 	color: #3ba8c0;
+}
+
+
+/* file upload*/
+
+.fileupload-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.fileupload-lable{
+    display: block;
+    width: 52px;
+    height: 41px;
+    position: absolute;
+    right: 0;
+    background: url(../img/upload.png) 10px 7px no-repeat;
+    background-color: #48cbe8;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.fileupload{ /* хак, взятый из html5boilerplate */
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.form-input {
+    display: block;
+    width: 300px;
+    color: #48cbe8;
+    border: 1px solid #48cbe8;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 9px 9px;
+    font-family: "fira_sanslight";
+    font-size: 13px;
+    background-color: white;
+}
+
+.fileupload-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.controlred {
+	border: 1px solid #F97E76;
+	cursor: auto;
+	background-color: #fad2d1;
 }

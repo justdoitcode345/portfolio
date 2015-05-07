@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-<script src="js/main.js"></script>
-<script src="app/bower/jquery/dist/jquery.min.js"></script>
-<script src="app/bower/modernizr/modernizr.js"></script>
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>связаться со мной</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<!-- SEO -->
 	<meta name="description" content="homework04">
 	<meta name="keywords" content="homework04">
 	<meta name="author" content="Khasanov Timur">
+	<title>связаться со мной</title>
 	<!-- vendor CSS -->
 	<link rel="stylesheet" href="app/bower/normalize.css/normalize.css">
 	<!-- fonts CSS -->
@@ -23,13 +20,13 @@
 	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
 	<!-- favicon -->
 	<link rel="icon" type="image/png" href="img/favicon.png">
-	<script src="js/main.js"></script>
-	<script src="app/bower/jquery/dist/jquery.min.js"></script>
+	<!-- стили тултипов -->
+	<link rel="stylesheet" href="app/bower/tooltipster/css/tooltipster.css" />
+	<link rel="stylesheet" href="css/tooltips-styles.css">
 	<script src="app/bower/modernizr/modernizr.js"></script>
-	<script type="text/javascript" src="app/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 </head>
 <body>
-	<!--[if It IE 7]>
+	<!--[if It IE 8]>
 	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/">обновите</a> его.</p>
 	<![endif]-->
 <div class="wrapper">
@@ -114,11 +111,14 @@
 				<!-- контакты конец -->
 			</aside>
 			<!-- сайдбар конец -->
+
+
+
 			<!-- блок меняющегося контента -->
 			<div class="variable-content">
 				<div class="section-contacts">
 					<div class="section-contacts-header">У вас интересный проект? Напишите мне</div>
-					<form id="send-mail" class="send-mail">
+					<form id="sendmail" class="send-mail" novalidate="novalidate">
 						<div class="form-wrapper"> <!-- общий большой контейнер форм -->
 							<div class="top-line-wrapper clearfix"> <!-- обёртка для двух верхних форм --> 
 								<!-- первая верхняя форма -->
@@ -126,7 +126,7 @@
 									<div class="top-line-form-label">Имя</div>
 									<div class="top-line-form-field">
 										<span class="form-tip"></span>
-										<input class="control intput-required" type="text" name="name" placeholder="Как к Вам обращаться">
+										<input class="control" id="name" form="sendmail" type="text" name="name" placeholder="Как к Вам обращаться" required/>
 									</div>
 								</div>
 								<!-- первая верхняя форма конец -->
@@ -135,19 +135,16 @@
 									<div class="top-line-form-label">Email</div>
 									<div class="top-line-form-field">
 										<span class="form-tip"></span>
-										<input class="control intput-required" type="text" name="email" placeholder="Куда мне писать">
+										<input class="control" id="email" form="sendmail" type="email" name="email" placeholder="Куда мне писать" />
 									</div>
 								</div>
 								<!-- вторая верхняя форма конец -->
 							</div> <!-- top-line-wrapper clearfix конец -->
 							<!-- обёртка для двух верхних форм конец -->
 							<!-- форма основного сообщения -->
-							<div class="message">
-								<div class="top-line-form-label">Сообщение</div>
-									<div class="main-form-field">
-										<span class="form-tip"></span>
-										<textarea class="message-field" type="text" name="message" placeholder="Кратко в чём суть"></textarea>
-									</div>
+							<div class="message text">
+								<label class="top-line-form-label" for="text">Сообщение</label>
+										<textarea class="message-field" id="messagetext" form="sendmail" type="text" name="text" placeholder="Кратко в чём суть"/></textarea>
 							</div>
 							<!-- форма основного сообщения конец -->
 							<!-- форма капчи -->
@@ -157,20 +154,20 @@
 									<div class="captcha-image">
 									</div>
 									<div class="confirmation-code-wrapper">
-										<input class="confirmation-code" type="text" name="confirmation" placeholder="Введите код">
+										<input class="confirmation-code" id="code" form="sendmail" type="text" name="confirmation" placeholder="Введите код"/>
 									</div>
 								</div>
-						</div>
+							</div>
 						<!-- форма капчи конец -->
-					</form>	
 						<!-- кнопки внизу формы связи -->
-						<div class="buttons-wrapper">
-							<button class="button send" name="отправить" form="send-mail">Отправить</button>
-							<button class="button clear" name="очистить" form="send-mail" type="reset">Очистить</button>
-						</div>
+							<div class="buttons-wrapper">
+								<button class="button send" name="отправить" form="sendmail" type="submit" method="post">Отправить</button>
+								<button class="button clear" name="очистить" form="sendmail" type="reset" id="buttonclear">Очистить</button>
+							</div>
 						<!-- кнопки внизу формы связи конец -->
-					</div>
-				</div>
+						</div>
+						</div>
+					</form>	
 			</div>
 			<!-- блок меняющегося контента конец -->
 		</div> <!-- блок контейнера области между футером и хедером конец -->
@@ -183,7 +180,28 @@
 	</div>
 </footer>
 </div>
-<script type="text/javascript">jQuery('input[placeholder], textarea[placeholder]').placeholder();
-</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+
+<!-- 
+ 	<script src="app/bower/jquery/dist/jquery.min.js"></script>
+
+ 	 -->
+<!-- 	
+
+	<script src="js/validation/dist/jquery.validate.min.js"></script>
+
+ -->
+<!-- 
+	<script src="js/validation/dist/additional-methods.min.js"></script>
+	 -->
+<!-- 
+	<script src="js/validation-contacts.js"></script>
+	 -->
+	<script src="js/validationv2.js"></script>
+	<script src="app/bower/tooltipster/js/jquery.tooltipster.min.js"></script>
+	
+	<script src="app/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

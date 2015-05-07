@@ -2,7 +2,7 @@
 <html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/W>
 	<title>мои работы</title>
 	<!-- SEO -->
 	<meta name="description" content="homework04">
@@ -20,13 +20,13 @@
 	<link href='http://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
 	<!-- favicon -->
 	<link rel="icon" type="image/png" href="img/favicon.png">
-	<script src="js/main.js"></script>
-	<script src="app/bower/jquery/dist/jquery.min.js"></script>
+	<!-- стили тултипов -->
+	<link rel="stylesheet" href="app/bower/tooltipster/css/tooltipster.css">
+	<link rel="stylesheet" href="css/tooltips-styles.css">
 	<script src="app/bower/modernizr/modernizr.js"></script>
-	<script type="text/javascript" src="app/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 </head>
 <body>
-	<!--[if It IE 7]>
+	<!--[if It IE 8]>
 	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browserhappy.com/">обновите</a> его.</p>
 	<![endif]-->
 <div class="wrapper">
@@ -111,8 +111,11 @@
 					<div class="myworks">
 						<ul class="project-list clearfix">
 							<li class="project-item">
-								<div class="img-wrapper one">
+								<div class="img-wrapper one" id="anime">
 									<img class="project-img" src="img/projects/project1.jpg" alt="project-image"></img>
+									<div class="project-hover">
+										<div class="project-hover-label">название</div>
+									</div>
 								</div>
 								<a class="project-link">www.site.ru</a>
 								<div class="project-description">Информация о проекте 1 превью 2 строки...</div>
@@ -120,6 +123,9 @@
 							<li class="project-item">
 								<div class="img-wrapper two">
 									<img class="project-img" src="img/projects/project2.jpg" alt="project-image"></img>
+									<div class="project-hover">
+										<div class="project-hover-label">название</div>
+									</div>
 								</div>
 								<a class="project-link">www.site.ru</a>
 								<div class="project-description">Информация о проекте 1 превью 2 строки...</div>
@@ -127,6 +133,9 @@
 							<li class="project-item">
 								<div class="img-wrapper three">
 									<img class="project-img" src="img/projects/project3.jpg " alt="project-image"></img>
+									<div class="project-hover">
+										<div class="project-hover-label">название</div>
+									</div>
 								</div>
 								<a class="project-link">www.site.ru</a>
 								<div class="project-description">Информация о проекте 1 превью 2 строки...</div>
@@ -135,13 +144,16 @@
 								<div class="img-wrapper four ">
 									<img class="project-img" src="img/projects/project4.jpg" alt="project-image">
 									</img>
+									<div class="project-hover">
+										<div class="project-hover-label">название</div>
+									</div>
 								</div>
 								<a class="project-link">www.site.ru</a>
 								<div class="project-description">Информация о проекте 1 превью 2 строки...</div>
 							</li>
 							<li class="project-item">
 								<div class="b-container">
-									<a href="javascript:PopUpShow()" onclick="showclass()">
+									<a id="popuprun">
 										<div class="img-wrapper add">
 											<img class="project-img add" alt="project-image-add" src="img/projects/new_project.png" height="32" width="32"></img>
 												<span class="project-add-label">Добавить проект</span>
@@ -163,73 +175,69 @@
     <div class="b-popup-content">
 		<div class="project-add-header clearfix">
 	    	<span class="project-add-header-text">Добавление проекта</span>
-	    	<a href="javascript:PopUpHide()">
-	    		<div class="close-form">
-	    		</div>
+	    	<a class="close-popup b-close" id="closepopup">
+	    		<div class="close-form"></div>
 	    	</a>
     	</div>
-    	<form id="project-add" class="project-add">
+    	<form id="project-add" class="project-add" novalidate="novalidate">
 	    	<ul class="project-add-list">
 	    		<li class="project-add-list-item list-name">
 	    			<span class="project-add-list-item-header">Название проекта</span>
-	    			<input class="project-input p-name" type="text" name="name" placeholder="Введите название проекта" form="project-add"> 
+	    			<input id="add-project-name" class="project-input p-name" type="text" name="name" placeholder="Введите название проекта" form="project-add"> 
 	    		</li>
 	    		<li class="project-add-list-item list-image">
-	    			<span class="project-add-list-item-header">Картинка проекта</span>
-					<div class="upload-image-wrapper">
-	    			<input class="project-input p-image" type="text" name="image" placeholder="Загрузите изображение" form="project-add">
-	    			<div class="upload-cloud"></div>
-					</div>
+					<div class="fileupload-wrapper" id="uploadfile">
+                        <span class="project-add-list-item-header">Картинка проекта</span>
+                        <label class="fileupload-lable">
+                            <input id="fileupload" class="fileupload" type="file" name="files[]">
+                            <input id="fileurl" type="hidden" name="fileurl">
+                        </label>
+                        <input id="filename" type="text" class="form-input" name="image" placeholder="Загрузите изображение">
+                    </div>
 	    		</li>
 	    		<li class="project-add-list-item item-url">
 	    			<span class="project-add-list-item-header">URL проекта</span>
-	    			<input class="project-input p-url" type="text" name="link" placeholder="Добавьте ссылку" form="project-add"> 
+	    			<input id="add-project-url" class="project-input p-url" type="text" name="link" placeholder="Добавьте ссылку" form="project-add" type="url"> 
 	    		</li>
 	    		<li class="project-add-list-item item-desc">
 	    			<span class="project-add-list-item-header">Описание</span>
-	    			<textarea class="project-input p-desc" type="text" name="description" placeholder="Пара слов о Вашем проекте" form="project-add"></textarea>
+	    			<textarea id="add-project-desc" class="project-input p-desc" type="text" name="description" placeholder="Пара слов о Вашем проекте" form="project-add"></textarea>
 	    		</li>
 	    	</ul>
-	    	<script src="app/bower/jquery/dist/jquery.min.js"></script>
 	    </form> 
 	    <div class="project-add-button-wrapper">
-	    	<button class="project-add-button" name="Добавить" form="project-add">Добавить</button>
+	    	<button class="project-add-button" name="Добавить" form="project-add" type="submit">Добавить</button>
 		</div>
-<script src="app/bower/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="app/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
-    <script type="text/javascript">jQuery('input[placeholder], textarea[placeholder]').placeholder();</script>
     </div><!-- popup-content конец -->
 </div>
 <!-- всплывающее окно конец -->
-<script>
-    $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы    
-        PopUpHide();
-    });
-    //Функция отображения PopUp
-    function PopUpShow(){
-        $("#popup1").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHide(){
-        $("#popup1").hide();
-    }
-
-    function showclass() {
-		$('#b-popup').attr('display', 'block');
-		$('#b-popup-content').attr('display', 'block');
-
-	}
-</script>
 <footer class="footer">
 	<div class="footer-content clearfix">
 		<div class="footer-login">
-		<a href="authorization.html" class="login-link lock"><span class="text-hide">Войти</span></a>
+			<a href="authorization.html" class="login-link lock">
+				<span class="text-hide">Войти</span>
+			</a>
 		</div>
 		<p class="copyright">&copy 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
 	</div>
 </footer>
 </div>
-<script type="text/javascript">jQuery('input[placeholder], textarea[placeholder]').placeholder();</script>
-</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+
+	<!-- 
+
+	<script src="app/bower/jquery/dist/jquery.min.js"></script>
+	
+ -->
+	<script src="js/validation/dist/jquery.validate.min.js"></script>
+	<script src="app/bower/bpopup/jquery.bpopup.js"></script>
+	<script src="js/bpopup.js"></script>
+	<script src="app/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="app/bower/tooltipster/js/jquery.tooltipster.min.js"></script>
+	<script src="js/validation-works.js"></script>
+	
+	
+	
 </html>

@@ -35,7 +35,7 @@ html {
 .logo {
 	font-size: 40pt;
 	font-family: 'Patrick Hand', cursive;
-	font-color: black;
+	color: black;
 	text-decoration: none;
 }
 .logo-link {

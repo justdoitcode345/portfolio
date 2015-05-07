@@ -82,6 +82,7 @@
 	cursor: auto;
 	padding: 7px 9px;
 }
+
 ::-webkit-input-placeholder { /* WebKit browsers */
    color: #48cbe8;
 }
@@ -180,4 +181,10 @@
 }
 .button.clear:focus {
 	border: 2px solid #849db5;
+}
+/*красный бордер и фон для ошибки валидации*/
+.controlred {
+	border: 1px solid #F97E76;
+	cursor: auto;
+	background-color: #fad2d1;
 }
