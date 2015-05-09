@@ -298,3 +298,35 @@ border: 2px solid #48cbe8;
 	cursor: auto;
 	background-color: #fad2d1;
 }
+#errorblock {
+	background-color: #fad2d1;
+	border: 1px solid #F97E76;
+	margin-top: 15px;
+	border-radius: 4px;
+	display: none;
+}
+.errorblock-header {
+	display: block;
+	color: #f97e76;
+	font-family: 'fira_sansbook';
+	margin-left: 7px;
+	font-size: 25px;
+	padding: -10px;
+	line-height: 35px;
+}
+.errorblock-text {
+	display: block;
+	color: #f97e76;
+	font-family: 'fira_sansbook';
+	font-size: 15px;
+	margin-left: 7px;
+	line-height: 14px;
+}
+.error-close {
+	background-image: url(../img/error-close.png);
+	width: 11px;
+	height: 11px;
+	position: relative;
+	top: -45px;
+	left: 303px;
+}

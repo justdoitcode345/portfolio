@@ -181,6 +181,11 @@
     	</div>
     	<form id="project-add" class="project-add" novalidate="novalidate">
 	    	<ul class="project-add-list">
+	    		<li class="project-add-list-item list-name clearfix" id="errorblock">
+	    			<span class="errorblock-header">Ошибка!</span>
+	    			<span class="errorblock-text">Невозможно добавить проект.</span>
+	    			<a id="closeerror" href="#"><div class="error-close"></div></a>
+	    		</li>
 	    		<li class="project-add-list-item list-name">
 	    			<span class="project-add-list-item-header">Название проекта</span>
 	    			<input id="add-project-name" class="project-input p-name" type="text" name="name" placeholder="Введите название проекта" form="project-add"> 
@@ -222,22 +227,11 @@
 	</div>
 </footer>
 </div>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-
-	<!-- 
-
-	<script src="app/bower/jquery/dist/jquery.min.js"></script>
-	
- -->
-	<script src="js/validation/dist/jquery.validate.min.js"></script>
+	<script src="app/bower/tooltipster/js/jquery.tooltipster.min.js"></script>
+	<script src="app/bower/jquery-placeholder/jquery.placeholder.js"></script>
+	<script src="js/validationv3.js"></script>
 	<script src="app/bower/bpopup/jquery.bpopup.js"></script>
 	<script src="js/bpopup.js"></script>
-	<script src="app/bower/jquery-placeholder/jquery.placeholder.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="app/bower/tooltipster/js/jquery.tooltipster.min.js"></script>
-	<script src="js/validation-works.js"></script>
-	
-	
-	
 </html>

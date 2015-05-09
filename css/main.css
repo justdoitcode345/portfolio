@@ -308,3 +308,9 @@ html {
 	clear: both;
 }
 /* clearfix конец */
+
+.controlred {
+	border: 1px solid #F97E76;
+	cursor: auto;
+	background-color: #fad2d1;
+}

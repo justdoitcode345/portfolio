@@ -84,3 +84,9 @@
 :-ms-input-placeholder { /* Internet Explorer 10+ */
    color: #48cbe8;
 }
+
+.controlred {
+	border: 1px solid #F97E76;
+	cursor: auto;
+	background-color: #fad2d1;
+}
