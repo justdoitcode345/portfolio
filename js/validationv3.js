@@ -128,27 +128,21 @@ var Validation = (function() {
         },
 
         _removeError = function() {
-            $(this).removeClass('controlred');
-            $(this).tooltipster('hide');
+           element.removeClass('controlred');
+            element.tooltipster('hide');
         },
 
         _clearForm = function(form) {
-            var form = $(this);
+            var form = $('form');
             form.find('input, textarea').tooltipster('hide');
             form.find('.controlred').removeClass('controlred');
         },
 
-        // remove highlight and qtip from upload field
+        
         _removeErrorUpload = function() {
             var filename = $('#filename');
             filename.removeClass('controlred');
             filename.tooltipster('hide');
-        },
-
-        _clearPopupForm = function(form) {
-            form.find('input, textarea').tooltipster('hide');
-            form.find('.controlred').removeClass('controlred');
-            // form.find('.file-input-text').removeClass('error-fake-input');
         },
 
         _createTooltip = function(element) {
@@ -160,7 +154,6 @@ var Validation = (function() {
     return {
         init: _setUpListeners,
         validateForm: _validateForm,
-        clearPopupForm: _clearPopupForm
     }
 
 })();
@@ -198,11 +191,7 @@ var AddProjectForm = (function() {
 
             $('#project-add').on('submit', Validation.validateForm($('#project-add')));
             // if (!Validation.validateForm($('#project-add'))) 
-            //         (document.getElementById('errorblock')).style.display = "block";
-
-            
-
-                
+            //         document.getElementById('errorblock').style.display = "block";
 
                 
             }
@@ -275,9 +264,9 @@ var Projects = (function() {
 
 })();
 
-// 
-// fixes for placeholder in ie
-// 
+
+//fixes for placeholder in ie
+
 var FixPlaceholders = (function() {
     var _fixPlaceholders = function() {
         $('input, textarea').placeholder();
