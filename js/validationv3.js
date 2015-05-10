@@ -55,7 +55,7 @@ $('#project-add #filename').tooltipster({
         offsetX: '-4',
         theme: 'tooltips-styles'
     });
-$('#project-add #add-project-url').tooltipster({
+$('#project-add #projectlink').tooltipster({
         content: 'Ссылка на проект',
         animation: 'fade',
         trigger: 'custom',
@@ -109,7 +109,8 @@ var Validation = (function() {
             var elements = form.find('input, textarea').not('#reset')
                 .not('[type="submit"]')
                 .not('[type="hidden"]')
-                .not('[type="file"]'),
+                .not('[type="file"]')
+                ,
                 valid = true;
 
             $.each(elements, function(index, val) {
@@ -128,8 +129,8 @@ var Validation = (function() {
         },
 
         _removeError = function() {
-           element.removeClass('controlred');
-            element.tooltipster('hide');
+            $(this).removeClass('controlred');
+            $(this).tooltipster('hide');
         },
 
         _clearForm = function(form) {
@@ -145,6 +146,8 @@ var Validation = (function() {
             filename.tooltipster('hide');
         },
 
+      
+
         _createTooltip = function(element) {
             
             element.tooltipster('show');
@@ -153,7 +156,7 @@ var Validation = (function() {
 
     return {
         init: _setUpListeners,
-        validateForm: _validateForm,
+        validateForm: _validateForm
     }
 
 })();
@@ -306,5 +309,37 @@ $(document).ready(function() {
         LoginForm.init();
     }
 
+    if ($.find('#email').length > 0) {
+       
+    }
+
+
+
+    $('#email').blur(function() {
+        if($(this).val() != '') {
+            var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+            if(pattern.test($(this).val())){
+                $(this).tooltipster('hide');
+                $(this).removeClass('controlred');
+            } else {
+                $(this).tooltipster('show');
+                $(this).addClass('controlred');
+            }
+        } 
+    });
+ 
+
+$('#projectlink').blur(function() {
+        if($(this).val() != '') {
+            var pattern = /^(?:(?:https?|ftp|telnet):\/\/(?:[a-z0-9_-]{1,32}(?::[a-z0-9_-]{1,32})?@)?)?(?:(?:[a-z0-9-]{1,128}\.)+(?:com|net|org|mil|edu|arpa|ru|gov|biz|info|aero|inc|name|[a-z]{2})|(?!0)(?:(?!0[^.]|255)[0-9]{1,3}\.){3}(?!0|255)[0-9]{1,3})(?:\/[a-z0-9.,_@%&?+=\~\/-]*)?(?:#[^ \'\"&<>]*)?$/i;
+            if(pattern.test($(this).val())){
+                $(this).tooltipster('hide');
+                $(this).removeClass('controlred');
+            } else {
+                $(this).tooltipster('show');
+                $(this).addClass('controlred');
+            }
+        } 
+    });
 
 });
